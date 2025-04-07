@@ -6,54 +6,64 @@ import { FaUserGroup } from "react-icons/fa6";
 
 export const Aboutme = () => {
   return (
-    <div className="h-screen px-4 sm:px-8 md:px-16 lg:px-24">
-      <div className="text-center pt-16">
+    <section className="w-full px-4 sm:px-8 md:px-16 lg:px-24 py-16">
+      <div className="text-center mb-12">
         <p className="text-neutral-600 text-lg font-serif">Get to know more</p>
-        <p className="text-3xl sm:text-5xl font-serif mt-3 font-bold">About Me</p>
+        <h2 className="text-3xl sm:text-5xl font-serif mt-3 font-bold">
+          About Me
+        </h2>
       </div>
-      <div className="flex flex-col lg:flex-row items-center lg:items-start mt-10 lg:mt-20">
-        <div className="flex justify-center lg:justify-start  lg:pt-20 lg:pl-20 ">
+
+      <div className="flex flex-col xl:flex-row items-center sm:ml-36 gap-10">
+        {/* Image Section */}
+        <div className="flex justify-center xl:justify-start">
           <Image
             src={pimage3}
-            alt="ab"
+            alt="Profile"
             width={400}
-            className="rounded-3xl  h-[280px] sm:h-[380px] object-cover sm:object-top md:object-center"
+            className="rounded-3xl h-[280px] sm:h-[380px] w-auto object-cover"
           />
         </div>
-        <div className="lg:ml-20 pt-10 lg:pt-28">
-          <div className="flex flex-col md:flex-row gap-10 justify-center">
-            <div className="flex flex-col text-center py-5 border-2 border-gray-500 w-full md:w-[350px] rounded-3xl">
-              <GiAchievement size={30} className="mx-auto" />
-              <p className="text-2xl font-serif">Experience</p>
+
+        {/* Text + Cards Section */}
+        <div className="flex flex-col items-center xl:items-start max-w-3xl w-full">
+          <div className="flex flex-col md:flex-row gap-6 w-full justify-center xl:justify-start">
+            {/* Experience Card */}
+            <div className="flex flex-col items-center text-center p-6 border-2 border-gray-500 rounded-3xl w-full md:w-1/2">
+              <GiAchievement size={30} />
+              <p className="text-2xl font-serif mt-2">Experience</p>
               <p className="text-neutral-600 text-lg font-serif">Fresher</p>
               <p className="text-neutral-600 text-lg font-serif">
                 React Developer
               </p>
             </div>
-            <div className="flex flex-col text-center py-6 border-2 border-gray-500 w-full md:w-[350px] rounded-3xl">
-              <FaUserGroup size={20} className="mx-auto" />
-              <p className="text-2xl font-serif">Education </p>
-              <p className="text-neutral-600 text-lg font-serif">
-                B.Sc.it. Bachelors Degree
-              </p>
-              <p className="text-neutral-600 text-lg font-serif">
-                MCA Masters Degree
-              </p>
+
+            {/* Education Card */}
+            <div className="flex flex-col items-center text-center p-6 border-2 border-gray-500 rounded-3xl w-full md:w-1/2">
+              <FaUserGroup size={30} />
+              <p className="text-2xl font-serif mt-2">Education</p>
+              <p className="text-neutral-600 text-lg font-serif">B.Sc IT</p>
+              <p className="text-neutral-600 text-lg font-serif">MCA</p>
             </div>
           </div>
-          <p className="text-neutral-600 text-sm font-serif mt-10 text-center lg:text-left">
+
+          {/* Description */}
+          <p className="text-neutral-600 text-sm font-serif mt-8 text-center xl:text-left">
             Enthusiastic and motivated individual with a strong foundation in
             Computer Science and a passion for Web Development.
-            <br /> Equipped with excellent problem-solving abilities, effective
-            communication skills, and a keen attention to detail.<br/> Demonstrated
-            ability to learn quickly and adapt to new environments, as
-            evidenced by relevant coursework, internships, or projects.<br /> Eager to
-            bring a proactive attitude and a strong work ethic to a
+            <br />
+            Equipped with excellent problem-solving abilities, effective
+            communication skills, and a keen attention to detail.
+            <br />
+            Demonstrated ability to learn quickly and adapt to new environments,
+            as evidenced by relevant coursework, internships, or projects.
+            <br />
+            Eager to bring a proactive attitude and a strong work ethic to a
             dynamic team where I can contribute to achieving organizational
-            goals <br /> and continue developing my skills.
+            goals and continue developing my skills.
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
