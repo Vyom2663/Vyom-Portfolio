@@ -28,7 +28,7 @@ export const Contect = () => {
         <p className="text-center text-neutral-400 text-lg font-serif">
           Get in Touch
         </p>
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl text-center font-serif mt-2 text-white">
+        <h1 className="text-3xl sm:text-4xl lg:text-5xl text-center font-serif mt-2 text-black dark:text-white">
           Contact Me
         </h1>
 
@@ -37,7 +37,7 @@ export const Contect = () => {
           <div className="flex flex-col gap-6 sm:flex-row sm:justify-center sm:items-center">
             <div className="flex items-center justify-center sm:justify-start">
               <SiGmail size={24} className="text-red-500" />
-              <p className="ml-3 text-sm sm:text-base text-white hover:underline underline-offset-8 hover:text-gray-400 transition duration-300">
+              <p className="ml-3 text-sm sm:text-base text-black dark:text-white hover:underline underline-offset-8 hover:text-gray-400 transition duration-300">
                 vyomjoshi2603@gmail.com
               </p>
             </div>
@@ -46,7 +46,7 @@ export const Contect = () => {
               <FaLinkedin size={24} className="text-blue-600" />
               <Link
                 href="https://www.linkedin.com/in/vyom-joshi-66b8aa314/"
-                className="ml-3 text-sm sm:text-base text-white hover:underline underline-offset-8 hover:text-gray-400 transition duration-300"
+                className="ml-3 text-sm sm:text-base text-black dark:text-white hover:underline underline-offset-8 hover:text-gray-400 transition duration-300"
               >
                 Linkedin
               </Link>
@@ -56,7 +56,7 @@ export const Contect = () => {
           {/* Social Links */}
           <div className="flex justify-center items-center gap-6 mt-8 flex-wrap">
             <Link href="https://github.com/Vyom2663">
-              <FaGithub size={28} className="text-white hover:text-gray-500 transition duration-300" />
+              <FaGithub size={28} className="text-black dark:text-white hover:text-gray-500 transition duration-300" />
             </Link>
             <Link href="https://www.instagram.com/_.vyom26?igsh=eTFyY3AwazduZDE=">
               <FaInstagram size={28} className="text-pink-600 hover:text-pink-400 transition duration-300" />
