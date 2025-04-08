@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export const Contect = () => {
   return (
-    <div className="relative overflow-hidden py-16 px-4 sm:px-8 lg:px-20 xl:px-32 h-[625px] sm:h-[500px] bg-black">
+    <div className="relative overflow-hidden py-16 px-4 sm:px-8 lg:px-20 xl:px-32 h-[625px] sm:h-[500px] bg-white dark:bg-black">
       {/* Shooting stars */}
       <div className="absolute inset-0 z-0">
         {Array.from({ length: 75 }).map((_, i) => (
