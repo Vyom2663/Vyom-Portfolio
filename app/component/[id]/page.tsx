@@ -2,38 +2,39 @@ import React from "react";
 import { Aboutme } from "../Aboutme";
 import { Contect } from "../Contect";
 import { Me } from "../Me";
-import  Experience  from "../Experiance";
+import Experience from "../Experiance";
 import { Project } from "../Project";
 import Journey from "../Journey";
 
-function DynamicPage({ params }: { params: { id: string } }) {
+type PageProps = {
+  params: {
+    id: string;
+  };
+};
+
+const DynamicPage = ({ params }: PageProps) => {
   const { id } = params;
 
-  // Render different components based on the `id` parameter
-  if (id === "aboutme") {
-    return <Aboutme />;
-  } else if (id === "contect") {
-    return <Contect />;
+  switch (id) {
+    case "aboutme":
+      return <Aboutme />;
+    case "contect":
+      return <Contect />;
+    case "me":
+      return <Me />;
+    case "experiance":
+      return <Experience />;
+    case "project":
+      return <Project />;
+    case "journey":
+      return <Journey />;
+    default:
+      return (
+        <div className="h-screen flex justify-center items-center">
+          <h1 className="text-3xl font-bold">Page Not Found</h1>
+        </div>
+      );
   }
-  else if(id === "me"){
-    return <Me/>
-  }
-  else if(id === "experiance"){
-    return <Experience/>
-  } 
-  else if(id === "project"){
-    return <Project/>
-  }
-  else if(id === "journey"){
-    return <Journey/>
-  }
-  else {
-    return (
-      <div className="h-screen flex justify-center items-center">
-        <h1 className="text-3xl font-bold">Page Not Found</h1>
-      </div>
-    );
-  }
-}
+};
 
 export default DynamicPage;
