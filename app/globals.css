@@ -2,4 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-
+@keyframes shoot {
+    0% {
+      transform: translateX(0) translateY(0) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-600px) translateY(600px) scale(0.5);
+      opacity: 0;
+    }
+  }
+  
+  .star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: white;
+    border-radius: 50%;
+    animation: shoot 3s linear infinite;
+    opacity: 0.8;
+  }
+  

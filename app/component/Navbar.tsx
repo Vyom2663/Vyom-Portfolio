@@ -15,8 +15,25 @@ export const Navbar = () => {
   ];
 
   return (
-    <nav className="w-full border-b border-gray-700 bg-white dark:bg-black">
-      <div className="max-w-7xl mx-auto px-4 sm:px-8 md:px-12 lg:px-20">
+    <nav className="relative w-full border-b border-gray-700 bg-white dark:bg-black overflow-hidden">
+      {/* Shooting Stars Background */}
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        {Array.from({ length: 50 }).map((_, i) => (
+          <div
+            key={i}
+            className="star"
+            style={{
+              top: `${Math.random() * 100}%`,
+              left: `${Math.random() * 100}%`,
+              animationDelay: `${Math.random() * 4}s`,
+              animationDuration: `${2 + Math.random() * 2}s`,
+            }}
+          />
+        ))}
+      </div>
+
+      {/* Navbar Content */}
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-8 md:px-12 lg:px-20">
         <div className="flex justify-between items-center h-20">
           {/* Brand */}
           <div className="text-2xl sm:text-3xl text-black dark:text-white font-serif">
@@ -25,11 +42,11 @@ export const Navbar = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:block">
-            <ul className="flex space-x-6 text-lg font-serif text-white">
+            <ul className="flex space-x-6 text-lg font-serif text-black dark:text-white">
               {navLinks.map((link) => (
                 <li
                   key={link.href}
-                  className="hover:underline underline-offset-8 hover:text-gray-300 transition duration-300"
+                  className="hover:underline underline-offset-8 hover:text-gray-400 transition duration-300"
                 >
                   <Link href={link.href}>{link.label}</Link>
                 </li>
@@ -47,7 +64,7 @@ export const Navbar = () => {
           </button>
         </div>
 
-        {/* Mobile Menu with transition */}
+        {/* Mobile Menu */}
         <div
           className={`md:hidden transition-all duration-300 ease-in-out overflow-hidden ${
             isOpen ? "max-h-[500px]" : "max-h-0"
