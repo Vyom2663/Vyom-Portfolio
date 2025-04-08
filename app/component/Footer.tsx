@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const Footer = () => {
   return (
-    <div className="w-full bg-white dark:bg-black text-white">
+    <div className="w-full bg-white text-black dark:bg-black dark:text-white">
       <div className="flex-1 p-6 sm:p-11 items-center">
         <ul className="flex flex-wrap justify-center text-lg sm:text-2xl space-x-4 sm:space-x-5 font-serif">
           <li className="hover:underline underline-offset-8 hover:text-gray-400 duration-500">

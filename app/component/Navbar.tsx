@@ -15,11 +15,11 @@ export const Navbar = () => {
   ];
 
   return (
-    <nav className="w-full border-b border-gray-700 bg-black">
+    <nav className="w-full border-b border-gray-700 bg-white dark:bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-8 md:px-12 lg:px-20">
         <div className="flex justify-between items-center h-20">
           {/* Brand */}
-          <div className="text-2xl sm:text-3xl text-white font-serif">
+          <div className="text-2xl sm:text-3xl text-black dark:text-white font-serif">
             <Link href="/">Vyom Joshi</Link>
           </div>
 
