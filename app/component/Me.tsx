@@ -32,7 +32,7 @@ export const Me = () => {
           <Link href="../Vyomjoshi.MCA.2025.pdf"><button className="border-gray-700 border-2 text-black font-semibold px-6 py-3 rounded-3xl hover:text-white hover:bg-gray-400 duration-700">
             Download CV
           </button></Link>
-          <Link href="../contect">
+          <Link href="/component/contect">
             <button className="border-gray-700 border-2 text-white bg-gray-600 font-semibold px-6 py-3 rounded-3xl hover:text-white hover:bg-black duration-700">
               Contact Info
             </button>
