@@ -6,16 +6,16 @@ import Experience from "../Experiance";
 import { Project } from "../Project";
 import Journey from "../Journey";
 
-type PageProps = {
+type Props = {
   params: {
     id: string;
   };
 };
 
-const DynamicPage = ({ params }: PageProps) => {
+const Page = ({ params }: Props) => {
   const { id } = params;
 
-  switch (id) {
+  switch (id.toLowerCase()) {
     case "aboutme":
       return <Aboutme />;
     case "contect":
@@ -37,4 +37,4 @@ const DynamicPage = ({ params }: PageProps) => {
   }
 };
 
-export default DynamicPage;
+export default Page;
