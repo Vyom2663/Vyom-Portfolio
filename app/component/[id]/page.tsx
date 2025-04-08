@@ -1,3 +1,5 @@
+"use client"
+
 import React from "react";
 import { Aboutme } from "../Aboutme";
 import { Contect } from "../Contect";
@@ -5,17 +7,15 @@ import { Me } from "../Me";
 import Experience from "../Experiance";
 import { Project } from "../Project";
 import Journey from "../Journey";
+import { useParams } from "next/navigation";
 
-type Props = {
-  params: {
-    id: string;
-  };
-};
 
-const Page = ({ params }: Props) => {
-  const { id } = params;
 
-  switch (id.toLowerCase()) {
+const Page = () => {
+  const params = useParams();
+  const  id  = params.id;
+
+  switch (id) {
     case "aboutme":
       return <Aboutme />;
     case "contect":
