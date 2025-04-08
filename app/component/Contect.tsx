@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export const Contect = () => {
   return (
-    <div className="py-16 px-4 sm:px-8 lg:px-20 xl:px-32 bg-white dark:bg-black">
+    <div className="py-16 px-4 sm:px-8 lg:px-20 xl:px-32 h-[625px] sm:h-[500px] bg-white dark:bg-black">
       <div className="pt-10">
         <p className="text-center text-neutral-600 dark:text-neutral-400 text-lg font-serif">
           Get in Touch
@@ -17,7 +17,7 @@ export const Contect = () => {
 
         <div className="border-2 mx-auto mt-10 py-6 px-6 rounded-2xl max-w-2xl border-gray-700 dark:border-gray-600">
           {/* Email and LinkedIn */}
-          <div className="flex flex-col gap-6 sm:flex-row sm:justify-around sm:items-center">
+          <div className="flex flex-col gap-6 sm:flex-row sm:justify-center sm:items-center">
             <div className="flex items-center justify-center sm:justify-start">
               <SiGmail size={24} className="text-red-500" />
               <p className="ml-3 text-sm sm:text-base text-black dark:text-white hover:underline underline-offset-8 hover:text-gray-400 dark:hover:text-gray-400 transition duration-300">

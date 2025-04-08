@@ -23,7 +23,7 @@ export const Footer = () => {
           </li>
         </ul>
       </div>
-      <p className="text-center text-sm sm:text-lg text-gray-500 mb-4 sm:mb-8">
+      <p className="text-center text-sm sm:text-lg text-gray-500 pb-4 sm:pb-8">
         Copyright © 2025 Vyom Joshi. All Rights Reserved.
       </p>
     </div>
