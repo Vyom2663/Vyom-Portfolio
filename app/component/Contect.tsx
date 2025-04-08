@@ -12,7 +12,7 @@ export const Contect = () => {
         {Array.from({ length: 75 }).map((_, i) => (
           <div
             key={i}
-            className="star"
+            className="star dark:star-dark star-light"
             style={{
               top: `${Math.random() * 100}%`,
               left: `${Math.random() * 100}%`,

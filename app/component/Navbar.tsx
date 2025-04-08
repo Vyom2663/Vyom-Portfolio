@@ -15,13 +15,13 @@ export const Navbar = () => {
   ];
 
   return (
-    <nav className="relative w-full border-b border-gray-700 bg-white dark:bg-black overflow-hidden">
+    <nav className="relative w-full border-b border-gray-700 bg-black overflow-hidden">
       {/* Shooting Stars Background */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         {Array.from({ length: 50 }).map((_, i) => (
           <div
             key={i}
-            className="star"
+            className="star dark:star-dark star-light"
             style={{
               top: `${Math.random() * 100}%`,
               left: `${Math.random() * 100}%`,
@@ -36,13 +36,13 @@ export const Navbar = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-8 md:px-12 lg:px-20">
         <div className="flex justify-between items-center h-20">
           {/* Brand */}
-          <div className="text-2xl sm:text-3xl text-black dark:text-white font-serif">
+          <div className="text-2xl sm:text-3xl text-white font-serif">
             <Link href="/">Vyom Joshi</Link>
           </div>
 
           {/* Desktop Menu */}
           <div className="hidden md:block">
-            <ul className="flex space-x-6 text-lg font-serif text-black dark:text-white">
+            <ul className="flex space-x-6 text-lg font-serif text-white">
               {navLinks.map((link) => (
                 <li
                   key={link.href}
@@ -56,7 +56,7 @@ export const Navbar = () => {
 
           {/* Mobile Toggle */}
           <button
-            className="md:hidden text-2xl text-black dark:text-white focus:outline-none"
+            className="md:hidden text-2xl text-white focus:outline-none"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle Menu"
           >

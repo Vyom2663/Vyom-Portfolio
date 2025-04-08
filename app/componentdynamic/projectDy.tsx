@@ -10,7 +10,7 @@ const ProjectDy = ({ skills}:{skills : temp})=> {
     <div className="flex flex-wrap justify-center gap-8 mt-8">
       {skills.map((skill : Skill, index : number) => (
         <div
-          className="max-w-sm p-6 border-2 border-gray-500 rounded-2xl shadow-lg bg-white"
+          className="max-w-sm p-6 border-2 border-gray-500 rounded-2xl shadow-lg bg-white dark:bg-transparent"
           key={index}
         >
           <div className="relative rounded-3xl overflow-hidden">
@@ -28,11 +28,11 @@ const ProjectDy = ({ skills}:{skills : temp})=> {
 
           <div className="mt-4 flex justify-center space-x-4">
             <Link href={skill.link}>
-              <button className="px-4 py-2 border-2 rounded-full font-serif text-black font-semibold border-gray-400 hover:bg-gray-700 hover:text-white">
+              <button className="px-4 py-2 border-2 rounded-full font-serif text-black dark:text-white font-semibold border-gray-400 hover:bg-gray-700 hover:text-white">
                 Github
               </button>
             </Link>
-            <button className="px-4 py-2 border-2 rounded-full font-serif text-black font-semibold border-gray-400 hover:bg-gray-700 hover:text-white">
+            <button className="px-4 py-2 border-2 rounded-full font-serif text-black dark:text-white font-semibold border-gray-400 hover:bg-gray-700 hover:text-white">
               Live Demo
             </button>
           </div>
