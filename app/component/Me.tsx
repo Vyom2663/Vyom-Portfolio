@@ -20,7 +20,7 @@ export const Me = () => {
       </div>
       <div className="text-center sm:text-left mt-0 sm:mt-24">
         <p className="text-neutral-700 text-lg sm:text-xl sm:text-center sm:mt-14 font-serif">
-          Hello, I'm
+          {`Hello, I'm`}
         </p>
         <h1 className="text-3xl sm:text-[50px] sm:mt-3 sm:text-center font-serif text-neutral-950 font-bold">
           Vyom Joshi
