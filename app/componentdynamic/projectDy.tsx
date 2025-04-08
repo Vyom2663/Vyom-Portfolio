@@ -3,10 +3,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { temp } from "../component/Project";
 
+type Skill = temp[number];
+
 const ProjectDy = ({ skills}:{skills : temp})=> {
   return (
     <div className="flex flex-wrap justify-center gap-8 mt-8">
-      {skills.map((skill : any, index : number) => (
+      {skills.map((skill : Skill, index : number) => (
         <div
           className="max-w-sm p-6 border-2 border-gray-500 rounded-2xl shadow-lg bg-white"
           key={index}
